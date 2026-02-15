@@ -1,581 +1,244 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Алексей Быков - Эксперт по управлению активами | Увеличьте доходность на 33-128%</title>
-    <meta name="description" content="Профессиональное управление активами с доходностью 33-128% годовых. К.э.н. Алексей Быков - 20+ лет опыта на американском и российском рынках.">
+    <title>AI ARCHITECT WAR MAP — 7 DAY TRANSFORMATION</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .hero {
-            background: white;
-            margin: 20px auto;
-            border: 1px solid #ddd;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: #0A0E13;
+            color: #fff;
             overflow: hidden;
+            height: 100vh;
         }
-        
-        .hero-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            min-height: 600px;
-        }
-        
-        .hero-left {
-            padding: 60px;
-        }
-        
-        .hero-right {
-            background: #003366;
-            color: white;
-            padding: 60px;
-            position: relative;
-        }
-        
-        .trust-badge {
-            display: inline-block;
-            background: #0066cc;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 4px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-        
-        h1 {
-            font-size: 42px;
-            font-weight: bold;
-            line-height: 1.2;
-            margin-bottom: 20px;
-            color: #003366;
-        }
-        
-        .subtitle {
-            font-size: 24px;
-            color: #666;
-            margin-bottom: 30px;
-            font-weight: 300;
-        }
-        
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin: 40px 0;
-        }
-        
-        .stat {
-            text-align: center;
-            padding: 20px;
-            background: #f8fafc;
-            border-radius: 12px;
-        }
-        
-        .stat-number {
-            font-size: 32px;
-            font-weight: bold;
-            color: #003366;
-            display: block;
-        }
-        
-        .stat-label {
-            font-size: 14px;
-            color: #666;
-            margin-top: 5px;
-        }
-        
-        .cta-form {
-            background: white;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        
-        .form-title {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: white;
-        }
-        
-        .form-subtitle {
-            opacity: 0.9;
-            margin-bottom: 30px;
-            font-size: 16px;
-        }
-        
-        .form-step {
-            margin-bottom: 20px;
-        }
-        
-        .step-number {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background: #0066cc;
-            color: white;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 30px;
-            font-weight: 600;
-            margin-right: 15px;
-        }
-        
-        input, select {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            font-size: 16px;
-            margin-top: 10px;
-            transition: border-color 0.3s;
-        }
-        
-        input:focus, select:focus {
-            outline: none;
-            border-color: #0066cc;
-        }
-        
-        .cta-button {
-            width: 100%;
-            background: #0066cc;
-            color: white;
-            border: none;
-            padding: 18px 30px;
-            font-size: 18px;
-            font-weight: 600;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            margin-top: 20px;
-        }
-        
-        .cta-button:hover {
-            background: #0052a3;
-        }
-        
-        .guarantee {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 14px;
-            opacity: 0.8;
-        }
-        
-        .social-proof {
-            margin: 40px 0;
-        }
-        
-        .testimonial {
-            background: #f8fafc;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 20px 0;
-            border-left: 4px solid #10b981;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-        
-        .testimonial-author {
-            font-weight: 600;
-            color: #1e3c72;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 60px 0;
-        }
-        
-        .feature {
-            text-align: center;
-            padding: 30px;
-        }
-        
-        .feature-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(45deg, #1e3c72, #10b981);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 32px;
-            color: white;
-        }
-        
-        .feature h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #1e3c72;
-        }
-        
-        .urgency {
-            background: #ef4444;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-weight: 600;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
-        }
-        
-        @media (max-width: 768px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero-left, .hero-right {
-                padding: 40px 30px;
-            }
-            
-            h1 {
-                font-size: 36px;
-            }
-            
-            .stats {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        .popup-overlay {
-            display: none;
+
+        /* Animated grid background */
+        #grid-canvas {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.8);
-            z-index: 1000;
+            z-index: 1;
+            opacity: 0.15;
         }
-        
-        .popup {
+
+        /* Particle canvas */
+        #particle-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        /* Main container */
+        #app {
+            position: relative;
+            z-index: 3;
+            height: 100vh;
+            display: flex;
+        }
+
+        /* Toggle switch */
+        #view-toggle {
             position: absolute;
-            top: 50%;
+            top: 30px;
             left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            padding: 40px;
-            border-radius: 16px;
-            max-width: 500px;
-            width: 90%;
+            transform: translateX(-50%);
+            z-index: 100;
+            display: flex;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            border: 1px solid rgba(0, 209, 255, 0.3);
+            overflow: hidden;
         }
-        
-        .close-popup {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 24px;
+
+        .toggle-btn {
+            padding: 12px 30px;
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.5);
             cursor: pointer;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <div class="urgency">
-        🔥 ОГРАНИЧЕННОЕ ПРЕДЛОЖЕНИЕ: Только для первых 50 клиентов в 2025 году
-    </div>
-
-    <div class="container">
-        <div class="hero">
-            <div class="hero-content">
-                <div class="hero-left">
-                    <div class="trust-badge">✅ К.Э.Н. • 20+ ЛЕТ ОПЫТА • NYSE & MOEX</div>
-                    
-                    <h1>Увеличьте свой капитал на 33-128% за год</h1>
-                    
-                    <p class="subtitle">Профессиональное управление активами на американском и российском рынках от кандидата экономических наук</p>
-                    
-                    <div class="stats">
-                        <div class="stat">
-                            <span class="stat-number">128%</span>
-                            <div class="stat-label">Максимальная доходность</div>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">20+</span>
-                            <div class="stat-label">Лет опыта</div>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">1млн₽</span>
-                            <div class="stat-label">Минимальная сумма</div>
-                        </div>
-                    </div>
-
-                    <div class="social-proof">
-                        <div class="testimonial">
-                            <div class="testimonial-text">"Алексей Александрович помог увеличить мой портфель на 85% за 8 месяцев. Профессиональный подход и постоянная аналитика."</div>
-                            <div class="testimonial-author">— Михаил К., инвестор</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-right">
-                    <div class="cta-form">
-                        <h2 class="form-title">Получите персональную стратегию инвестирования</h2>
-                        <p class="form-subtitle">Заполните форму и получите бесплатный анализ вашего портфеля в течение 24 часов</p>
-                        
-                        <form id="leadForm">
-                            <div class="form-step">
-                                <span class="step-number">1</span>
-                                <label>Ваше имя:</label>
-                                <input type="text" name="name" placeholder="Введите ваше имя" required>
-                            </div>
-                            
-                            <div class="form-step">
-                                <span class="step-number">2</span>
-                                <label>WhatsApp для связи:</label>
-                                <input type="tel" name="phone" placeholder="+7 ___ ___-__-__" required>
-                            </div>
-                            
-                            <div class="form-step">
-                                <span class="step-number">3</span>
-                                <label>Размер инвестиций:</label>
-                                <select name="investment_size" required>
-                                    <option value="">Выберите сумму</option>
-                                    <option value="1-5">1-5 млн ₽</option>
-                                    <option value="5-10">5-10 млн ₽</option>
-                                    <option value="10-50">10-50 млн ₽</option>
-                                    <option value="50+">50+ млн ₽</option>
-                                </select>
-                            </div>
-                            
-                            <button type="submit" class="cta-button">
-                                🚀 Получить персональную стратегию
-                            </button>
-                            
-                            <div class="guarantee">
-                                🛡️ Гарантия конфиденциальности • Ответ в течение 24 часов
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon">📈</div>
-                <h3>Проверенная доходность</h3>
-                <p>Целевая доходность 33-128% годовых на основе опционных стратегий и диверсификации между американским и российским рынками</p>
-            </div>
-            
-            <div class="feature">
-                <div class="feature-icon">🎓</div>
-                <h3>Экспертные знания</h3>
-                <p>Кандидат экономических наук, более 20 лет опыта в управлении активами, лучший опционный трейдер России</p>
-            </div>
-            
-            <div class="feature">
-                <div class="feature-icon">🛡️</div>
-                <h3>Полная безопасность</h3>
-                <p>Средства хранятся на личном брокерском счете клиента. Только вы контролируете ввод и вывод средств</p>
-            </div>
-            
-            <div class="feature">
-                <div class="feature-icon">🌍</div>
-                <h3>Международные рынки</h3>
-                <p>Работа с американскими (NYSE) и российскими активами, валютные операции через деривативы</p>
-            </div>
-            
-            <div class="feature">
-                <div class="feature-icon">⚡</div>
-                <h3>Быстрый старт</h3>
-                <p>Простая процедура: связь в WhatsApp → обсуждение → договор → начало работы в течение 3 дней</p>
-            </div>
-            
-            <div class="feature">
-                <div class="feature-icon">🎯</div>
-                <h3>Индивидуальный подход</h3>
-                <p>Консультирование с учетом вашего риск-профиля, срока инвестиций и индивидуальных предпочтений</p>
-            </div>
-        </div>
-
-        <div style="background: white; padding: 60px; border-radius: 20px; margin: 40px 0; text-align: center;">
-            <h2 style="font-size: 36px; margin-bottom: 30px; color: #1e3c72;">Простые шаги к увеличению вашего капитала</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin: 40px 0;">
-                <div>
-                    <div style="width: 80px; height: 80px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 24px; font-weight: 600;">1</div>
-                    <h3 style="color: #1e3c72; margin-bottom: 15px;">Напишите в WhatsApp</h3>
-                    <p>Отправьте сообщение на +7 913 750 23 76 или заполните форму выше</p>
-                </div>
-                
-                <div>
-                    <div style="width: 80px; height: 80px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 24px; font-weight: 600;">2</div>
-                    <h3 style="color: #1e3c72; margin-bottom: 15px;">Получите анализ</h3>
-                    <p>В течение 24 часов получите персональную стратегию для вашего капитала</p>
-                </div>
-                
-                <div>
-                    <div style="width: 80px; height: 80px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 24px; font-weight: 600;">3</div>
-                    <h3 style="color: #1e3c72; margin-bottom: 15px;">Начните зарабатывать</h3>
-                    <p>Подписываем договор и начинаем управление вашими активами</p>
-                </div>
-            </div>
-            
-            <button onclick="scrollToForm()" style="background: linear-gradient(45deg, #ef4444, #dc2626); color: white; border: none; padding: 20px 40px; font-size: 20px; font-weight: 600; border-radius: 8px; cursor: pointer; margin-top: 30px; animation: pulse 2s infinite;">
-                💰 ХОЧУ УВЕЛИЧИТЬ ДОХОДНОСТЬ СЕЙЧАС
-            </button>
-        </div>
-
-        <div style="background: white; padding: 40px; border-radius: 20px; margin: 40px 0;">
-            <h2 style="text-align: center; margin-bottom: 40px; color: #1e3c72; font-size: 32px;">Три варианта сотрудничества</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                <div style="border: 2px solid #e2e8f0; border-radius: 16px; padding: 30px; text-align: center; transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='#10b981'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='#e2e8f0'">
-                    <h3 style="color: #1e3c72; margin-bottom: 20px;">📚 Обучение</h3>
-                    <div style="font-size: 32px; font-weight: 800; color: #10b981; margin-bottom: 10px;">150,000 ₽</div>
-                    <p style="color: #666; margin-bottom: 20px;">+ 10% от вашей прибыли</p>
-                    <ul style="text-align: left; color: #666;">
-                        <li>Персональное обучение торговле</li>
-                        <li>Стратегии опционной торговли</li>
-                        <li>Анализ американского рынка</li>
-                        <li>Постоянная поддержка</li>
-                    </ul>
-                </div>
-                
-                <div style="border: 3px solid #10b981; border-radius: 16px; padding: 30px; text-align: center; position: relative; background: linear-gradient(145deg, #f0fdf4, #ecfdf5);">
-                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #10b981; color: white; padding: 5px 20px; border-radius: 20px; font-size: 14px; font-weight: 600;">ПОПУЛЯРНЫЙ</div>
-                    <h3 style="color: #1e3c72; margin-bottom: 20px;">💼 Управление активами</h3>
-                    <div style="font-size: 32px; font-weight: 800; color: #10b981; margin-bottom: 10px;">от 1 млн ₽</div>
-                    <p style="color: #666; margin-bottom: 20px;">2% в год + 20% от прибыли</p>
-                    <ul style="text-align: left; color: #666;">
-                        <li>Минимум 1 млн рублей</li>
-                        <li>Средства на вашем счете</li>
-                        <li>Целевая доходность 33-128%</li>
-                        <li>Ежемесячная отчетность</li>
-                    </ul>
-                </div>
-                
-                <div style="border: 2px solid #e2e8f0; border-radius: 16px; padding: 30px; text-align: center;">
-                    <h3 style="color: #1e3c72; margin-bottom: 20px;">📊 Консультации</h3>
-                    <div style="font-size: 32px; font-weight: 800; color: #10b981; margin-bottom: 10px;">По запросу</div>
-                    <p style="color: #666; margin-bottom: 20px;">Индивидуальное ценообразование</p>
-                    <ul style="text-align: left; color: #666;">
-                        <li>Анализ текущего портфеля</li>
-                        <li>Стратегия диверсификации</li>
-                        <li>Семинары и мастер-классы</li>
-                        <li>Разовые консультации</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div style="background: #1e3c72; color: white; padding: 60px; border-radius: 20px; text-align: center; margin: 40px 0;">
-            <h2 style="font-size: 36px; margin-bottom: 20px;">Готовы увеличить свой капитал?</h2>
-            <p style="font-size: 20px; margin-bottom: 30px; opacity: 0.9;">Свяжитесь со мной прямо сейчас для бесплатной консультации</p>
-            
-            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 30px;">
-                <a href="https://wa.me/79137502376" style="background: #25d366; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 10px;">
-                    📱 WhatsApp: +7 913 750 23 76
-                </a>
-                <a href="mailto:1@ruscoin.io" style="background: #ef4444; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 10px;">
-                    ✉️ Email: 1@ruscoin.io
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Exit Intent Popup -->
-    <div class="popup-overlay" id="exitPopup">
-        <div class="popup">
-            <span class="close-popup" onclick="closePopup()">&times;</span>
-            <h3 style="color: #1e3c72; margin-bottom: 20px; text-align: center;">Подождите! Не упустите возможность!</h3>
-            <p style="text-align: center; margin-bottom: 20px;">Получите <strong>БЕСПЛАТНЫЙ анализ портфеля</strong> стоимостью 25,000 ₽</p>
-            <input type="email" placeholder="Ваш email" style="margin-bottom: 15px;">
-            <button class="cta-button" onclick="submitExitForm()">Получить бесплатный анализ</button>
-        </div>
-    </div>
-
-    <script>
-        // Form submission
-        document.getElementById('leadForm').onsubmit = function(e) {
-            e.preventDefault();
-            alert('Спасибо! Мы свяжемся с вами в течение 24 часов для предоставления персональной стратегии инвестирования.');
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        // Exit intent popup
-        let exitIntentTriggered = false;
-        document.addEventListener('mouseleave', function(e) {
-            if (e.clientY <= 0 && !exitIntentTriggered) {
-                document.getElementById('exitPopup').style.display = 'block';
-                exitIntentTriggered = true;
+        .toggle-btn.active {
+            background: rgba(0, 209, 255, 0.2);
+            color: #00D1FF;
+            box-shadow: 0 0 20px rgba(0, 209, 255, 0.3);
+        }
+
+        /* Main content area */
+        #main-content {
+            flex: 1;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Central core */
+        #core {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 10;
+        }
+
+        #core-rings {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .core-ring {
+            position: absolute;
+            border: 2px solid;
+            border-radius: 50%;
+            animation: pulse-ring 3s ease-in-out infinite;
+        }
+
+        .core-ring:nth-child(1) {
+            width: 100%;
+            height: 100%;
+            border-color: rgba(0, 209, 255, 0.6);
+            animation-delay: 0s;
+        }
+
+        .core-ring:nth-child(2) {
+            width: 120%;
+            height: 120%;
+            left: -10%;
+            top: -10%;
+            border-color: rgba(0, 255, 136, 0.4);
+            animation-delay: 1s;
+        }
+
+        .core-ring:nth-child(3) {
+            width: 140%;
+            height: 140%;
+            left: -20%;
+            top: -20%;
+            border-color: rgba(0, 209, 255, 0.2);
+            animation-delay: 2s;
+        }
+
+        @keyframes pulse-ring {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.6;
             }
-        });
-
-        function closePopup() {
-            document.getElementById('exitPopup').style.display = 'none';
-        }
-
-        function submitExitForm() {
-            alert('Отлично! Проверьте email в течение часа - мы отправим вам бесплатный анализ портфеля.');
-            closePopup();
-        }
-
-        function scrollToForm() {
-            document.querySelector('.hero-right').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Phone number formatting
-        document.querySelector('input[name="phone"]').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length <= 11) {
-                value = value.replace(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/, '+$1 $2 $3-$4-$5');
-                e.target.value = value;
-            }
-        });
-
-        // Scroll animations
-        window.addEventListener('scroll', function() {
-            const features = document.querySelectorAll('.feature');
-            features.forEach(feature => {
-                const rect = feature.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 100) {
-                    feature.style.animation = 'fadeInUp 0.6s ease forwards';
-                }
-            });
-        });
-    </script>
-
-    <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
+            50% {
+                transform: scale(1.05);
                 opacity: 1;
-                transform: translateY(0);
             }
         }
-    </style>
-</body>
-</html>
+
+        #core-content {
+            position: relative;
+            z-index: 2;
+            background: radial-gradient(circle, rgba(0, 209, 255, 0.1), transparent);
+            padding: 40px;
+            border-radius: 50%;
+        }
+
+        #core h1 {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #00D1FF;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        #core .subtitle {
+            font-size: 11px;
+            color: #00FF88;
+            letter-spacing: 1px;
+            line-height: 1.4;
+        }
+
+        #progress-ring {
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            top: -20px;
+            left: -20px;
+        }
+
+        #progress-ring circle {
+            fill: none;
+            stroke-width: 3;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+            transition: stroke-dashoffset 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .progress-bg {
+            stroke: rgba(0, 209, 255, 0.1);
+        }
+
+        .progress-bar {
+            stroke: #00D1FF;
+            stroke-linecap: round;
+            filter: drop-shadow(0 0 8px rgba(0, 209, 255, 0.6));
+        }
+
+        /* Day nodes */
+        #day-nodes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .day-node {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .day-node-inner {
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 209, 255, 0.3);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .day-node:hover .day-node-inner {
+            background: rgba(0, 209, 255, 0.1);
+            border-color: #00D1FF;
+            box-shadow: 0 0 30px rgba(0, 209, 255, 0.4);
+            transform: scale(1.1);
+        }
+
+        .day-node.completed​​​​​​​​​​​​​​​​
